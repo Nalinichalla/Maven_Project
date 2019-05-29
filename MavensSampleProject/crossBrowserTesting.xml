@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossbrowserTesting">
+	<test thread-count="5" name="firefoxResults">
+		<parameter name="Browser" value="Firefox"></parameter>
+		<classes>
+			<class name="com.TestScenarios.FB_Login" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="ChromeResults">
+		<parameter name="Browser" value="Chrome"></parameter>
+		<classes>
+			<class name="com.TestScenarios.FB_Login" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="IEresults">
+		<parameter name="Browser" value="IE"></parameter>
+		<classes>
+			<class name="com.TestScenarios.FB_Login" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
